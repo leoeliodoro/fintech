@@ -10,6 +10,7 @@ body {
 
 a:hover {
     color: #1b75bc !important;
+    cursor: pointer;
 }
 
 h1 {
@@ -28,11 +29,13 @@ h1 {
 .col-md-6 a {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .col-md-6 a:hover {
     text-decoration: underline;
     color: #fff !important;
+    cursor: pointer;
 }
 
 .barra {
