@@ -16,6 +16,16 @@ h1 {
     color: #1b75bc;
 }
 
+.col-md-6 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.col-md-6 a:hover {
+    text-decoration: underline;
+    color: #fff !important;
+}
+
 .barra {
     font-size: 12px;
     font-weight: 500;
