@@ -1,0 +1,8 @@
+.active {
+    color: #1b75bc !important;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #1b75bc !important;
+}
