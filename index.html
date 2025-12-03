@@ -10,6 +10,11 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- Meu CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -67,62 +72,69 @@
   </div>
   <div class="titulo">
     <h1>Adicionar Gasto</h1>
-    </div>
-<div class="container">
-<form>
-  <div class="mb-3">
-    <label for="gasto" class="form-label">Nome do Gasto</label>
-    <input type="text" class="form-control" id="gasto" aria-describedby="emailHelp">
-    <div id="gastoHelp" class="form-text">Ex: Ração do Cachorro</div>
   </div>
-  <div class="mb-3">
-    <label for="data" class="form-label">Data do Gasto</label>
-    <input type="date" class="form-control" id="data">
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="gasto" class="form-label">Nome do Gasto</label>
+        <input type="text" class="form-control" id="gasto" aria-describedby="emailHelp">
+        <div id="gastoHelp" class="form-text">Ex: Ração do Cachorro</div>
+      </div>
+      <div class="mb-3">
+        <label for="data" class="form-label">Data do Gasto</label>
+        <input type="date" class="form-control" id="data">
+      </div>
+      <div class="mb-3">
+        <label for="valor" class="form-label">Valor (R$)</label>
+        <input type="number" class="form-control" id="valor" step="0.01">
+      </div>
+      <div class="mb-3">
+        <label for="categoria" class="form-label">Categoria</label>
+        <select class="form-select" aria-label="categoria" id="categoria">
+          <option selected>Selecione a Categoria</option>
+          <option value="1">Alimentação</option>
+          <option value="2">Saúde</option>
+          <option value="3">Educação</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="meio" class="form-label">Meio do Gasto</label>
+        <select class="form-select" aria-label="meio" id="meio">
+          <option selected>Selecione o Meio do Gasto</option>
+          <option value="1">Pix</option>
+          <option value="2">Cartão de Crédito</option>
+          <option value="3">Cartão de Débito</option>
+          <option value="4">Dinheiro</option>
+          <option value="4">Criptomoeda</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="prioridade" class="form-label">Prioridade</label>
+        <select class="form-select" aria-label="prioridade" id="prioridade">
+          <option selected>Baixa</option>
+          <option value="1">Média</option>
+          <option value="2">Alta</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentários</label>
+        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+        <div id="comentariosHelp" class="form-text">Campo Opcional</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Adicionar Gasto</button>
+      <button type="reset" class="btn btn-danger">Apagar Campos</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="valor" class="form-label">Valor (R$)</label>
-    <input type="number" class="form-control" id="valor"  step="0.01">
-  </div>
-  <div class="mb-3">
-    <label for="categoria" class="form-label">Categoria</label>
-    <select class="form-select" aria-label="categoria" id="categoria">
-  <option selected>Selecione a Categoria</option>
-  <option value="1">Alimentação</option>
-  <option value="2">Saúde</option>
-  <option value="3">Educação</option>
-</select>
-  </div>
-  <div class="mb-3">
-    <label for="meio" class="form-label">Meio do Gasto</label>
-    <select class="form-select" aria-label="meio" id="meio">
-  <option selected>Selecione o Meio do Gasto</option>
-  <option value="1">Pix</option>
-  <option value="2">Cartão de Crédito</option>
-  <option value="3">Cartão de Débito</option>
-  <option value="4">Dinheiro</option>
-  <option value="4">Criptomoeda</option>
-</select>
-  </div>
-  <div class="mb-3">
-    <label for="prioridade" class="form-label">Prioridade</label>
-    <select class="form-select" aria-label="prioridade" id="prioridade">
-  <option selected>Baixa</option>
-  <option value="1">Média</option>
-  <option value="2">Alta</option>
-</select>
-  </div>
-  <div class="mb-3">
-  <label for="comentarios" class="form-label">Comentários</label>
-  <textarea class="form-control" id="comentarios" rows="3"></textarea>
-  <div id="comentariosHelp" class="form-text">Campo Opcional</div>
-</div>
-  <button type="submit" class="btn btn-primary">Adicionar Gasto</button> 
-  <button type="reset" class="btn btn-danger">Apagar Campos</button>
-</form>
-</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+  <footer>
+    <div class="footer sticky-bottom py-4 text-light fs-6 mt-5">
+      © 2025 <strong>FinMind</strong> - Todos os Direitos Reservados
+    </div>
+  </footer>
+
 </body>
 
 </html>

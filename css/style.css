@@ -1,9 +1,13 @@
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
 .active {
     color: #1b75bc !important;
     font-weight: 600;
 }
 
-a:hover{
+a:hover {
     color: #1b75bc !important;
 }
 
@@ -27,4 +31,9 @@ h1 {
 .titulo {
     text-align: center;
     margin-top: 30px;
+}
+
+.footer {
+    background-color: #1b75bc;
+    text-align: center;
 }
