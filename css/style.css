@@ -6,3 +6,25 @@
 a:hover{
     color: #1b75bc !important;
 }
+
+h1 {
+    font-size: 22px;
+    color: #1b75bc;
+}
+
+.barra {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #1b75bc;
+    color: #fff;
+}
+
+.usuario {
+    margin-left: 12px;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 30px;
+}
